@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Frontend Mentor | Fylo data storage component</title>
+  </head>
+  <body>
+    <div class="fylo">
+      <img src="/images/logo.svg" alt="Fylo logo" class="fylo__logo" />
+      <div class="fylo__images">
+        <div class="fylo__image-container">
+          <img
+            src="/images/icon-document.svg"
+            alt="Document icon"
+            class="fylo__image"
+          />
+        </div>
+        <div class="fylo__image-container">
+          <img
+            src="/images/icon-folder.svg"
+            alt="Folder icon"
+            class="fylo__image"
+          />
+        </div>
+        <div class="fylo__image-container">
+          <img
+            src="/images/icon-upload.svg"
+            alt="Upload icon"
+            class="fylo__image"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="storage">
+      <p class="storage__text">
+        You’ve used <span class="storage--bold">815 GB</span> of your storage
+      </p>
+      <input type="range" id="storage__slider" min="0" max="1000" />
+      <div class="storage__min-max">
+        <p class="storage__text storage--bold">0 GB</p>
+        <p class="storage__text storage--bold">1000 GB</p>
+      </div>
+      <div class="storage__left">
+        <p class="storage__left-text">
+          <span class="storage--lg-text">185</span> GB left
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

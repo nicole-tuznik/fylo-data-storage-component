@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  height: 100vh;
+  background: #0c122c url(/images/bg-mobile.png) bottom/cover no-repeat;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif; }
+
+.fylo {
+  background: #1d2c67;
+  padding: 2rem 4rem 2rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 15px;
+  border-top-right-radius: 45%; }
+  .fylo__logo {
+    margin-bottom: 1.5rem; }
+  .fylo__image-container {
+    height: 3.5rem;
+    background: #0c122c;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; }
+  .fylo__images {
+    display: flex;
+    flex-direction: row; }
+  .fylo__image {
+    padding: 1rem; }
+
+.storage {
+  background: #1d2c67;
+  padding: 2rem;
+  border-radius: 15px;
+  position: relative; }
+  .storage__min-max {
+    display: flex;
+    justify-content: space-between; }
+  .storage__left {
+    background: #dddbff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -70%;
+    left: 13%;
+    padding: 1rem 2rem; }
+    .storage__left-text {
+      color: #0c122c; }
+  .storage--lg-text {
+    font-size: 4rem;
+    font-weight: 700; }
