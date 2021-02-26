@@ -15,14 +15,18 @@ body {
   font-family: "Raleway", sans-serif;
   letter-spacing: 1px; }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 500px; }
+
 .fylo {
   background: #1d2c67;
   padding: 2rem 4rem 2rem 2rem;
   margin-bottom: 2rem;
   border-radius: 15px;
-  border-top-right-radius: 45%;
-  width: 80%;
-  max-width: 500px; }
+  border-top-right-radius: 45%; }
   .fylo__logo {
     margin-bottom: 1.5rem; }
   .fylo__image-container {
@@ -44,8 +48,6 @@ body {
   padding: 2rem;
   border-radius: 15px;
   position: relative;
-  width: 80%;
-  max-width: 500px;
   text-align: center; }
   .storage__text {
     margin-bottom: 1rem; }
@@ -101,14 +103,25 @@ body {
   body {
     flex-direction: row;
     background: url(/images/bg-desktop.png) bottom/contain no-repeat #0c122c; }
+  .container {
+    flex-direction: row;
+    align-items: flex-end;
+    max-width: 1000px; }
   .fylo {
-    width: 30%;
-    margin-right: 2rem; }
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 2rem;
+    margin-bottom: 0;
+    height: 200px; }
   .storage {
-    width: 40%;
+    width: 40rem;
     text-align: left; }
     .storage__remaining {
+      right: 5%;
       bottom: 91%;
+      left: auto;
       padding: 1rem 1.5rem;
       border-bottom-right-radius: 0;
       margin-left: 0; }

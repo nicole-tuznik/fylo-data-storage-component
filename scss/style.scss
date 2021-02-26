@@ -18,14 +18,19 @@ body {
   letter-spacing: 1px;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 500px;
+}
+
 .fylo {
   background: hsl(228, 56%, 26%);
   padding: 2rem 4rem 2rem 2rem;
   margin-bottom: 2rem;
   border-radius: 15px;
   border-top-right-radius: 45%;
-  width: 80%;
-  max-width: 500px;
 
   &__logo {
     margin-bottom: 1.5rem;
@@ -56,8 +61,6 @@ body {
   padding: 2rem;
   border-radius: 15px;
   position: relative;
-  width: 80%;
-  max-width: 500px;
   text-align: center;
 
   &__text {
@@ -72,7 +75,6 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 0.5rem;
-    // position: relative;
   }
 
   &__progress-bar {
@@ -140,20 +142,30 @@ body {
       hsl(229, 57%, 11%);
   }
 
+  .container {
+    flex-direction: row;
+    align-items: flex-end;
+    max-width: 1000px;
+  }
+
   .fylo {
-    width: 30%;
-    // max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     margin-right: 2rem;
+    margin-bottom: 0;
+    height: 200px;
   }
 
   .storage {
-    width: 40%;
+    width: 40rem;
     text-align: left;
 
     &__remaining {
-      // width: 45%;
-      // left: 44%;
+      right: 5%;
       bottom: 91%;
+      left: auto;
       padding: 1rem 1.5rem;
       border-bottom-right-radius: 0;
       margin-left: 0;
