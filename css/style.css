@@ -12,14 +12,17 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 14px;
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 1px; }
 
 .fylo {
   background: #1d2c67;
   padding: 2rem 4rem 2rem 2rem;
   margin-bottom: 2rem;
   border-radius: 15px;
-  border-top-right-radius: 45%; }
+  border-top-right-radius: 45%;
+  width: 80%;
+  max-width: 500px; }
   .fylo__logo {
     margin-bottom: 1.5rem; }
   .fylo__image-container {
@@ -40,22 +43,82 @@ body {
   background: #1d2c67;
   padding: 2rem;
   border-radius: 15px;
-  position: relative; }
+  position: relative;
+  width: 80%;
+  max-width: 500px;
+  text-align: center; }
+  .storage__text {
+    margin-bottom: 1rem; }
+  .storage--bold {
+    font-weight: 700; }
   .storage__min-max {
     display: flex;
-    justify-content: space-between; }
-  .storage__left {
+    justify-content: space-between;
+    margin-top: 0.5rem; }
+  .storage__progress-bar {
+    height: 20px;
+    width: 100%;
+    background: #0c122c;
+    border-radius: 10px;
+    display: flex;
+    align-items: center; }
+  .storage__progress-used {
+    background: linear-gradient(to right, #ffa399, #ff4d97);
+    width: 81.5%;
+    height: 70%;
+    border-radius: 10px;
+    margin-left: 0.1rem;
+    position: relative; }
+    .storage__progress-used::after {
+      content: "";
+      height: 12px;
+      width: 12px;
+      background: #fff;
+      border-radius: 50%;
+      position: absolute;
+      right: 3px;
+      top: 1px; }
+  .storage__remaining {
     background: #dddbff;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: -70%;
-    left: 13%;
-    padding: 1rem 2rem; }
-    .storage__left-text {
-      color: #0c122c; }
+    margin-left: -110px;
+    left: 50%;
+    padding: 1rem 2rem;
+    color: #0c122c; }
+    .storage__remaining-text {
+      text-transform: uppercase;
+      color: #848794;
+      padding-left: 0.5rem; }
   .storage--lg-text {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700; }
+
+@media (min-width: 850px) {
+  body {
+    flex-direction: row;
+    background: url(/images/bg-desktop.png) bottom/contain no-repeat #0c122c; }
+  .fylo {
+    width: 30%;
+    margin-right: 2rem; }
+  .storage {
+    width: 40%;
+    text-align: left; }
+    .storage__remaining {
+      bottom: 91%;
+      padding: 1rem 1.5rem;
+      border-bottom-right-radius: 0;
+      margin-left: 0; }
+      .storage__remaining::after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 36px solid transparent;
+        border-right: 0px solid transparent;
+        border-top: 32px solid #dddbff;
+        position: absolute;
+        top: 100%;
+        right: 0; } }
